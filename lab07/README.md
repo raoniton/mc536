@@ -44,7 +44,7 @@ CALL gds.pageRank.stream('prGraph')
 YIELD nodeId, score
 RETURN gds.util.asNode(nodeId).name AS name, score AS pagerank
 ~~~
-![PageRank](images/graph.png)
+Resultado:
 ~~~cypher
 name | score
 --|--------
